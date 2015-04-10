@@ -45,6 +45,14 @@
 #import <Foundation/Foundation.h>
 #import "PocketAPITypes.h"
 
+#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+#import <UIKit/UIKit.h>
+#endif
+
+#ifdef __MAC_OS_X_VERSION_MAX_ALLOWED
+#import <Appkit/AppKit.h>
+#endif
+
 @class PocketAPILogin;
 
 @interface PocketAPI : NSObject {
